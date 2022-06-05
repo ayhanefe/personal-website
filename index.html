@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Efe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="efe's personal page"/>
+    <meta name="author" content="efe" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      type="text/css"
+    />
+    <style type="text/css">
+        .body { width: auto; }
+        .content {
+            margin-left:5vw;
+        }
+        .title { 
+            margin-top: 15vh;
+        }
+        .contact-table {
+            margin-top: 45vh;
+            display: inline-block;
+            background-color: #FDE100;
+            padding-top: -100%;
+            font-family: 'Roboto';
+            font-size: 20px;
+            line-height: 14px;
+        }
+        .title-text {
+            background-color: #FDE100;
+            display: inline-block;
+            line-height: 34px;
+            font-family: 'Roboto';
+            font-size: 48px;
+            padding-top: 1px;
+        }
+        #background {
+            background-image: url("images/penguin.jpeg"); 
+            background-repeat:repeat;
+        }
+    </style>
+  </head>
+  <body id="background" class="background">
+    <div class="content">
+        <h1 class="title">
+            <span class="title-text">EFE AYHAN</span>
+        </h1>
+        <div class="contact-table">
+            <div class="text">
+
+            
+            <h3><u><em>About</em></u></h3>
+            <p>Graduated from UPenn with BSE in CS & ECON</p>
+            <p>My <a href="https://www.linkedin.com/in/efeayhan/" target="_blank">LinkedIn</a></p>
+            <p>That's it</p>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var images = [ 
+        "images/penguin.jpeg",
+        "images/sheep-with-hat.jpeg"
+    ]
+    var image = images[Math.floor(Math.random()*images.length)]
+    document.getElementById("background").style.backgroundImage = `url('${image}')`
+  </script>
+</html>
